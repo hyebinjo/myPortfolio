@@ -15,6 +15,87 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    
+<!--Navbar-->
+    <section id="navbar">
+        <div class="logo">
+            <i class="fas fa-desktop"></i>
+            Hyebin
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">Home</li>
+            <li class="navbar__menu__item">About me</li>
+            <li class="navbar__menu__item">Projects</li>
+            <li class="navbar__menu__item">Contact</li>
+        </ul>
+        <button class="toggleBtn"></button>
+    </section>
+<!--Home-->
+    <section id="home">
+        <img class="home__profile-image" src="imgs/profile.jpg" alt="profile-img">
+        <div class="home__contents">
+            <h1 class="home__description">
+                안녕하세요.
+                <br/>
+                프론트엔드 개발자를 꿈꾸는
+                <br/>
+                조혜빈 입니다.
+            </h1>
+            <button class="home__contactBtn">contact me</button>
+        </div>
+    </section>
+<!--About-->
+    <section id="about">
+        <h1 class="about__title">About me</h1>
+        <p class="about__description">
+            우연히 접하게 된 개발에 흥미를 느끼고 스스로 하나하나 배워가고 있습니다. <br/>
+                마크업과 자바스크립트를 이용한 동적 웹페이지를 만들고, 개인 프로젝트를 만들면서 개발역량을 쌓아가고 있습니다. <br/>
+                언제나 새로운 것을 배우는 것을 좋아하며, 그것을 적용하여 새로운 것을 만드는 일에 재미를 느끼고 있습니다. <br/>
+                끊임없이 배우고 소통하며 함께 일하고싶은 개발자가 되겠습니다.
+        </p>
+        <div class="about__skills">
+            <h1 class="about__skills__title">Skills</h1>
+            <div class="skills_container">
+                <div class="skill">
+                    <img src="imgs/skills/HTML logo.png" alt="skill" class="skill__img">
+                    <span class="skill_name">HTML</span>
+                </div>
+                <div class="skill">
+                    <img src="imgs/skills/CSS logo.png" alt="skill" class="skill__img">
+                    <span class="skill_name">CSS</span>
+                </div>
+                <div class="skill">
+                    <img src="imgs/skills/JS logo.png" alt="skill" class="skill__img">
+                    <span class="skill_name">Javascript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Projects-->
+    <section id="projects">
+        <h1 class="projects__title">Projects</h1>
+        <div class="projects__container">
+            <div class="project">
+                <img src="imgs/projects/project1.png" alt="project image" class="project__img">
+                <div class="project__desctription">
+                    <h3>carrot game</h3>
+                    <span>HTML, CSS, Javascript</span>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__desctription"></div>
+            </div>
+        </div>
+    </section>
+<!--Contact-->
+    <section id="contact">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">hyebinjo91@gmail.com</h2>
+        <div class="contact__links">
+            <a href="#" target="blank">
+                <i class="fab fa-github-square"></i>
+            </a>
+        </div>
+        <p class="contact__rights">2021 Hyebin - All rights reserved</p>
+    </section>
 </body>
 </html>
