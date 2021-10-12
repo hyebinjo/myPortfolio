@@ -68,8 +68,8 @@ p {
   font-size: var(--font-regular);
 }
 
-.section {
-  margin: 60px;
+.container {
+  padding: 40px;
   text-align: center;
 }
 
@@ -85,6 +85,7 @@ p {
   color: var(--color-white);
   font-size: var(--font-small);
   padding: 10px 20px;
+  z-index: 1;
 }
 
 .navbar__logo {
@@ -127,11 +128,14 @@ p {
   background-size: cover;
   background-position: center;
   color: var(--color-white);
+  height: 500px;
 }
 
 .home__profile-image {
   height: auto;
   width: 30%;
+  background: center no-repeat url("imgs/profile.jpg");
+  background-size: cover;
 }
 
 .home__contents {
@@ -184,4 +188,70 @@ p {
   width: auto;
   height: 80px;
   margin: 20px;
+}
+
+/*Projects*/
+#projects {
+  background-color: var(--color-dark-white);
+}
+
+.projects__box {
+  display: flex;
+  justify-content: center;
+}
+
+.project {
+  width: 300px;
+  position: relative;
+  margin: 10px 40px;
+}
+
+.project__img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project__description {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+
+.project:hover .project__description {
+  opacity: 1;
+  top: 0;
+}
+
+.project__title::after {
+  content: "";
+  display: block;
+  margin: 8px auto;
+  width: 100px;
+  height: 1px;
+  background-color: var(--color-white);
+}
+
+/*Contact me*/
+.contact__links {
+  font-size: var(--font-large);
+  margin-bottom: 10px;
+}
+
+.contact__links a {
+  display: inline-block;
+  transition: all 300ms ease-out;
+}
+
+.contact__links a:hover {
+  transform: scale(1.1);
 }
