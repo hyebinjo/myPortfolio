@@ -132,7 +132,6 @@ p {
 }
 
 .home__profile-image {
-  height: auto;
   width: 30%;
   background: center no-repeat url("imgs/profile.jpg");
   background-size: cover;
@@ -254,4 +253,163 @@ p {
 
 .contact__links a:hover {
   transform: scale(1.1);
+}
+
+/*For below 768px screen width*/
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  /*Navbar*/
+  .navbar__menu {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
+    background-color: rgba(65, 65, 65, 0.9);
+    position: absolute;
+    top: 39px;
+    right: -86px;
+    transition: right 300ms ease-in;
+  }
+
+  .navbar__menu.visible {
+    right: 0;
+  }
+
+  .navbar__menu__item {
+    text-align: center;
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+  .toggleBtn {
+    display: block;
+    color: var(--color-white);
+  }
+
+  /*Home*/
+  #home {
+    height: 300px;
+  }
+
+  .home__contents {
+    margin: 40px;
+  }
+
+  /*About me*/
+  .about__description {
+    margin-bottom: 16px;
+  }
+
+  .skill__img {
+    width: auto;
+    height: 60px;
+    margin: 10px;
+  }
+
+  /*Projects*/
+  .project {
+    margin: 0 20px;
+  }
+
+  /*Contact*/
+  .contact__links {
+    margin-bottom: 0;
+  }
+
+  /*For below 480px screen width*/
+  @media screen and (max-width: 480px) {
+    :root {
+      /* Font size */
+      --font-large: 30px;
+      --font-medium: 18px;
+      --font-regular: 16px;
+      --font-small: 14px;
+      --font-micro: 12px;
+    }
+
+    h1 {
+      font-size: var(--font-medium);
+    }
+
+    h2 {
+      font-size: var(--font-regular);
+    }
+
+    h3 {
+      font-size: var(--font-small);
+    }
+
+    p {
+      font-size: var(--font-small);
+    }
+
+    span {
+      font-size: var(--font-micro);
+    }
+
+    /*Navbar*/
+    #navbar {
+      padding: 5px 10px;
+    }
+
+    .navbar__menu {
+      top: 29px;
+    }
+
+    /*Home*/
+    #home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+      height: auto;
+    }
+
+    .home__profile-image {
+      width: 100px;
+      height: 100px;
+      background: center no-repeat url("imgs/profile.jpg");
+      background-size: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .home__contents {
+      margin: 0 0 20px;
+      display: block;
+      text-align: center;
+    }
+
+    /*Project*/
+
+    .projects__box {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project {
+      width: 200px;
+      margin: 5px 8px;
+    }
+
+    .project__title::after {
+      margin: 2px auto;
+      width: 50px;
+    }
+  }
 }
