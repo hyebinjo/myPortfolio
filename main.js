@@ -14,6 +14,16 @@ function scrollIntoView(selector) {
     scrollTo.scrollIntoView({behavior: 'smooth'});
 }
 
+//toggle
+const toggleBtn = document.querySelector('.toggleBtn');
+toggleBtn.addEventListener('click', () => {
+    if(navbarMenu.className === 'navbar__menu') {
+        navbarMenu.classList.add('visible');
+    } else if(navbarMenu.className === 'navbar__menu visible') {
+        navbarMenu.classList.remove('visible');
+    }
+})
+
 // Home
 const contactBtn = document.querySelector('.home__contactBtn');
 contactBtn.addEventListener('click', () => {
